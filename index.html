@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+</head>
+
+<body>
+    <p id="text">Change text</p>
+    <button onclick="changetext()" type="button">Click me</button>
+    <br><br>
+    <button id="btn" onclick="changeColor()" type="button">Change Color</button>
+    <br><br>
+    <button  onclick="image()" type="button">Show image</button>
+    
+    <img id="myimg" src="" alt="image-here" style="max-width:300px;">
+    <br><br>
+    <button onclick="resetAll()" type="button">Reset</button>
+
+
+
+    <!-- javascript -->
+    <script>
+        function changetext() {
+            document.getElementById('text').innerHTML = 'I am a programmer';
+            document.getElementById('text').style.color = 'green'; document.getElementById('text').style.border = '2px solid red'; document.getElementById('text').style.width = '200px'; document.getElementById('text').style.fontSize = '25px';
+        }
+
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        function resetAll() {
+            document.getElementById('text').innerHTML = 'Change text';
+            document.getElementById('text').style.color = 'black'; document.getElementById('text').style.border = '0px solid '; document.getElementById('text').style.width = '0px'; document.getElementById('text').style.fontSize = '16px';
+            document.body.style.backgroundColor = "white";
+            document.getElementById('myimg').src="";
+
+        }
+
+                function image(){
+                    document.getElementById('myimg').src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+
+                }
+
+    </script>
+</body>
+
+</html>
+</body>
+</html>
