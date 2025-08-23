@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PT Sans Narrow", sans-serif;
+            font-weight: 400;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.3) url("https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg?semt=ais_hybrid&w=740&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .navbar {
+            background-color: rgba(148, 113, 201, 0.231);
+            height: 70px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .logo h2 {
+            color: white;
+            font-size: 30px;
+            padding-left: 10px;
+            padding-top: 10px;
+
+        }
+
+        .navbar nav ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 10px;
+            list-style-type: none;
+            padding-right: 20px;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.9s ease-in;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration-line: underline;
+            line-height: 2px;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+
+        }
+
+        .content h2 {
+            color: White;
+            font-size: 45px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 20px
+        }
+
+        .btn1,
+        .btn2 {
+            padding: 10px;
+            width: 150px;
+            color: black;
+            font-weight: 600;
+            border: 1px solid white;
+            font-size: 18px;
+            transition: all 0.9s ease-in;
+            border-end-end-radius: 15px;
+            border-start-start-radius: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn1 {
+            background: transparent;
+            color: white;
+        }
+
+        .btn1:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .btn2 {
+            background-color: white;
+            color: black;
+        }
+
+        .btn2:hover {
+            background: transparent;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2022/06/Starbucks_Corporation_Logo_2011.svg-e1657703028844.png?auto=format&q=60&fit=max&w=930"
+                    alt="">
+                <h2>Hello Coder's</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h2>Create a Simple Navigation Bar</h2>
+            <br>
+            <h2>Using a Pure Html & Css</h2>
+            <br>
+            <br>
+            <div class="buttons">
+                <button class="btn1">Learn More</button>
+                <button class="btn2">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+
+</html>
